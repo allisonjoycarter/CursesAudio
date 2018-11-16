@@ -97,6 +97,7 @@ class FrontEnd:
                     pos = 8
                     for i in range(len(currentPlaylist.getSongs())):
                         optionsWin.addstr(pos, 1, currentPlaylist.getSongs()[i],curses.A_REVERSE)
+                        pos += 1
                     command = 0
                     while command != 27:
                         command = optionsWin.getch()
