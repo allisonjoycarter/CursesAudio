@@ -2,11 +2,13 @@
 
 from front.FrontEnd import FrontEnd
 from player.Player import Player
+from library.Library import Library
 from curses import wrapper
 
 def main():
     player = Player()
-    front_end = FrontEnd(player)
+    library = Library()
+    front_end = FrontEnd(player, library)
 
 if __name__ == "__main__":
     main()
